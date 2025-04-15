@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberTerminal - Manav Beriwal</title>
+    <link rel="stylesheet" href="design/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="window-controls">
+                <div class="window-control close"></div>
+                <div class="window-control minimize"></div>
+                <div class="window-control maximize"></div>
+            </div>
+            <div class="terminal-title">manav@terminal: ~</div>
+        </div>
+
+        <div class="terminal-body" id="terminal-output">
+            <div class="system-message">
+                CHIN TAPAK DUM DUM v2.1.0<br>
+                Type 'help' for available commands
+            </div>
+        </div>
+
+        <div class="terminal-input">
+            <span class="prompt">manav@terminal:~$</span>
+            <div class="input-line">
+                <input type="text" id="command-input" autofocus>
+                <span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Content Sections -->
+    <div id="about-section" class="hidden-content">
+        <h2>Manav Beriwal Profile</h2>
+        <img src="image/profile_image.jpeg" alt="Profile" class="profile-img">
+        <div class="bio-content">
+            <p>Hey, I’m Manav Beriwal, born on July 27, 2006, from Delhi. 
+                I’m passionate about sports, finance, and technology—constantly
+                exploring new ways to merge them.Whether it’s trading algorithms,
+                backend development, or IoT,I love solving real-world problems.</p>
+            <ul class="bio-list">
+                <li>🏀 Sports & F1 enthusiast</li>
+                <li>📈 Finance enthusiast</li>
+                <li>💻 CP Lover</li>
+                <li>🌍 Aspiring global explorer</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="education-section" class="hidden-content">
+        <h2>Education & Achievements</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>Toddler's Kindergarden</h3>
+                <p>Completed Toddlers program and LKG (2008-2010)</p>
+            </div>
+            <div class="education-item">
+                <h3>Vikas Bharati Public School</h3>
+                <p>UKG to 12th Grade (2010-2024)<br>
+                CBSE Computer Science Stream </p>
+            </div>
+            <div class="education-item">
+                <h3>VMC JEE Coaching</h3>
+                <p>JEE Main & Advanced Preparation (2022-2024)</p>
+            </div>
+            <div class="education-item">
+                <h3>IIIT Hyderabad</h3>
+                <p>B.Tech in Computer Science & Engineering (2024-2028)</p>
+            </div>
+            <div class="education-item">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Secured 2nd position in district level debate competion for 3 straight years</li>
+                    <li>Secured 1st position in state level speech competition</li>
+                    <li>Secured 2nd in Nukad Natak Zonals</li>
+                    <li>Secured 1st in Maths and Aptitude OLympiads</li>
+                    <li>Secured 2nd place in DTU and DU MUN on Indian Parliament</li>
+                    <li>Secure 97% in 10th boards</li>
+                    <li>Secured 95% in 12th boards</li>
+                    <li>Secured AIR 790 in JEE MAINS</li>
+                    <li>Secured AIR 4521 in JEE ADVANCE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="skills-section" class="hidden-content">
+        <h2>Technical Skills Matrix</h2>
+        <div class="skill-grid">
+            <div class="skill-category">
+                <h3>Development</h3>
+                <ul>
+                    <li>Python <span class="skill-level intermediate">■■■□□</span></li>
+                    <li>C <span class="skill-level expert">■■■■■</span></li>
+                    <li>C++ <span class="skill-level expert">■■■■■</span></li>
+                    <li>JavaScript <span class="skill-level advanced">■■■■□</span></li>
+                    <li>Flask <span class="skill-level intermediate">■■■□□</span></li>
+                    <li>MongoDB <span class="skill-level intermediate">■■■□□</span></li>
+                    <li>MySQL <span class="skill-level intermediate">■■■□□</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Finance</h3>
+                <ul>
+                    <li>Algorithmic Trading <span class="skill-level advanced">■■■■□</span></li>
+                    <li>Technical Analysis <span class="skill-level expert">■■■■■</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery-section" class="hidden-content">
+        <h2>Delhi Gallery</h2>
+        <div class="gallery-grid">
+            <img src="image/delhi1.jpeg" alt="CP">
+            <img src="image/delhi2.jpeg" alt="Jama Masjid">
+            <img src="image/delhi3.jpeg" alt="Rohini">
+            <img src="image/delhi4.jpeg" alt="Chandni Chowk">
+            <img src="image/school.jpeg" alt="School">
+        </div>
+    </div>
+
+    <div id="contact-section" class="hidden-content">
+        <h2>Secure Contact Channels</h2>
+        <div class="contact-methods">
+            <p>📧 <a href="mailto:manavberiwal006@gmail.com" class="cyberlink">email@manav</a></p>
+            <p>📱 CONTACT NO: <span class="gpg-key">93113XXXXX</span></p>
+            <p>📄 <a href="manav_cv.pdf" class="cyberlink" target="_blank" rel="noopener noreferrer">(CV)</a></p>
+        </div>
+    </div>
+    <div id="text-analysis" class="hidden-content">
+        <h2>Text Analysis Engine</h2>
+        <div class="analysis-container">
+            <textarea id="text-input" placeholder="Enter/Paste your text here ...."></textarea>
+            <div class="analysis-controls">
+                <button class="cyber-button" onclick="runFullAnalysis()">Full Analysis</button>
+                <button class="cyber-button" onclick="countBasicStats()">Basic Stats</button>
+                <button class="cyber-button" onclick="analyzePronouns()">Pronouns</button>
+                <button class="cyber-button" onclick="analyzePrepositions()">Prepositions</button>
+                <button class="cyber-button" onclick="analyzeArticles()">Articles</button>
+            </div>
+            <div id="analysis-results" class="results-container"></div>
+        </div>
+    </div>
+    <audio id="terminal-sound" src="audio/chin_tapak_dum_dum.mp3"></audio>
+    <script src="backend/script.js"></script>
+</body>
+</html>
